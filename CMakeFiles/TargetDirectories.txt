@@ -1,3 +1,0 @@
-/home/timot/CPS2004/build/CMakeFiles/binops.dir
-/home/timot/CPS2004/build/CMakeFiles/edit_cache.dir
-/home/timot/CPS2004/build/CMakeFiles/rebuild_cache.dir
