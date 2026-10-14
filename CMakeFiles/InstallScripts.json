@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/timot/CPS2004/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
