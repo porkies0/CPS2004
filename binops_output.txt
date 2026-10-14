@@ -1,3 +1,0 @@
-15 + 9 = 24
-20 / 0 -> Error: Division by zero
-12 - 100 = -88
