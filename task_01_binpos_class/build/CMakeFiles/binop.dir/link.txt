@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/binop.dir/link.d CMakeFiles/binop.dir/main.cpp.o CMakeFiles/binop.dir/binop.cpp.o -o binop

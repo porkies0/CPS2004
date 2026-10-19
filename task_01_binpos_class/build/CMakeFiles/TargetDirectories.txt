@@ -1,0 +1,3 @@
+/home/timot/CPS2004/task_01_binpos_class/build/CMakeFiles/binop.dir
+/home/timot/CPS2004/task_01_binpos_class/build/CMakeFiles/edit_cache.dir
+/home/timot/CPS2004/task_01_binpos_class/build/CMakeFiles/rebuild_cache.dir
