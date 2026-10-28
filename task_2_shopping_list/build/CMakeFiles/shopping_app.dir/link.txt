@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/shopping_app.dir/link.d CMakeFiles/shopping_app.dir/main.cpp.o CMakeFiles/shopping_app.dir/shopping_items.cpp.o CMakeFiles/shopping_app.dir/grocery.cpp.o CMakeFiles/shopping_app.dir/electronics.cpp.o CMakeFiles/shopping_app.dir/clothing.cpp.o CMakeFiles/shopping_app.dir/book.cpp.o CMakeFiles/shopping_app.dir/toy.cpp.o -o shopping_app

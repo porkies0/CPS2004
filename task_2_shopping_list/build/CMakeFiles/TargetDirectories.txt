@@ -1,0 +1,3 @@
+/home/timot/CPS2004/task_2_shopping_list/build/CMakeFiles/shopping_app.dir
+/home/timot/CPS2004/task_2_shopping_list/build/CMakeFiles/edit_cache.dir
+/home/timot/CPS2004/task_2_shopping_list/build/CMakeFiles/rebuild_cache.dir
