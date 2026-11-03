@@ -1,5 +1,6 @@
 #include "shopping_items.h"
 #include <string>
+#include <vector>
 
 class Book : public ShoppingItem {
 
@@ -13,6 +14,7 @@ class Book : public ShoppingItem {
 
 
         std::string getSpecializedInfo() const override;
-
+        void persist(std::ofstream& os) const override;
+        static ShoppingItem* restore(const std::vector<std::string>& fields);
 };
 
