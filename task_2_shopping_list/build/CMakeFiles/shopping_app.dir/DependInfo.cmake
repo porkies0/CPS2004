@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/timot/CPS2004/task_2_shopping_list/electronics.cpp" "CMakeFiles/shopping_app.dir/electronics.cpp.o" "gcc" "CMakeFiles/shopping_app.dir/electronics.cpp.o.d"
   "/home/timot/CPS2004/task_2_shopping_list/grocery.cpp" "CMakeFiles/shopping_app.dir/grocery.cpp.o" "gcc" "CMakeFiles/shopping_app.dir/grocery.cpp.o.d"
   "/home/timot/CPS2004/task_2_shopping_list/main.cpp" "CMakeFiles/shopping_app.dir/main.cpp.o" "gcc" "CMakeFiles/shopping_app.dir/main.cpp.o.d"
+  "/home/timot/CPS2004/task_2_shopping_list/shopping_cart.cpp" "CMakeFiles/shopping_app.dir/shopping_cart.cpp.o" "gcc" "CMakeFiles/shopping_app.dir/shopping_cart.cpp.o.d"
   "/home/timot/CPS2004/task_2_shopping_list/shopping_items.cpp" "CMakeFiles/shopping_app.dir/shopping_items.cpp.o" "gcc" "CMakeFiles/shopping_app.dir/shopping_items.cpp.o.d"
   "/home/timot/CPS2004/task_2_shopping_list/toy.cpp" "CMakeFiles/shopping_app.dir/toy.cpp.o" "gcc" "CMakeFiles/shopping_app.dir/toy.cpp.o.d"
   "" "shopping_app" "gcc" "CMakeFiles/shopping_app.dir/link.d"

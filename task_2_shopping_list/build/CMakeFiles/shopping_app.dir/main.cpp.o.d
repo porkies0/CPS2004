@@ -179,8 +179,8 @@ CMakeFiles/shopping_app.dir/main.cpp.o: \
  /home/timot/CPS2004/task_2_shopping_list/clothing.h \
  /home/timot/CPS2004/task_2_shopping_list/book.h \
  /home/timot/CPS2004/task_2_shopping_list/toy.h \
- /usr/include/c++/15/iostream /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_tempbuf.h \
+ /home/timot/CPS2004/task_2_shopping_list/shopping_cart.h \
+ /usr/include/c++/15/memory /usr/include/c++/15/bits/stl_tempbuf.h \
  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
  /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
  /usr/include/c++/15/bits/shared_ptr.h \
@@ -220,4 +220,5 @@ CMakeFiles/shopping_app.dir/main.cpp.o: \
  /usr/include/c++/15/bits/ranges_uninitialized.h \
  /usr/include/c++/15/bits/ranges_algobase.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/iostream \
+ /usr/include/c++/15/utility /usr/include/c++/15/bits/stl_relops.h

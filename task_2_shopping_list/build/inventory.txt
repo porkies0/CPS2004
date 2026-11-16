@@ -3,3 +3,8 @@ Toy|1100|Police Car|8.3|plastic|3|
 Electronics|9043|Computer|1123|Lenovo|18|
 Grocery|4332|Milk|0.8|1.1.2027|0.8|
 Clothing|2929|Jeans|15|denim|Men|
+Book|3320|Can't hurt me|20.5|1544512279|364|David Goggins|
+Toy|1100|Police Car|8.3|plastic|3|
+Electronics|9043|Computer|1123|Lenovo|18|
+Grocery|4332|Milk|0.8|1.1.2027|0.8|
+Clothing|2929|Jeans|15|denim|Men|

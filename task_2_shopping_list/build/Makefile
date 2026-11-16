@@ -249,6 +249,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shopping_app.dir/build.make CMakeFiles/shopping_app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+shopping_cart.o: shopping_cart.cpp.o
+.PHONY : shopping_cart.o
+
+# target to build an object file
+shopping_cart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shopping_app.dir/build.make CMakeFiles/shopping_app.dir/shopping_cart.cpp.o
+.PHONY : shopping_cart.cpp.o
+
+shopping_cart.i: shopping_cart.cpp.i
+.PHONY : shopping_cart.i
+
+# target to preprocess a source file
+shopping_cart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shopping_app.dir/build.make CMakeFiles/shopping_app.dir/shopping_cart.cpp.i
+.PHONY : shopping_cart.cpp.i
+
+shopping_cart.s: shopping_cart.cpp.s
+.PHONY : shopping_cart.s
+
+# target to generate assembly for a file
+shopping_cart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shopping_app.dir/build.make CMakeFiles/shopping_app.dir/shopping_cart.cpp.s
+.PHONY : shopping_cart.cpp.s
+
 shopping_items.o: shopping_items.cpp.o
 .PHONY : shopping_items.o
 
@@ -321,6 +345,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... shopping_cart.o"
+	@echo "... shopping_cart.i"
+	@echo "... shopping_cart.s"
 	@echo "... shopping_items.o"
 	@echo "... shopping_items.i"
 	@echo "... shopping_items.s"

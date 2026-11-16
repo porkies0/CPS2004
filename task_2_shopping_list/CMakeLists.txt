@@ -10,4 +10,5 @@ add_executable(shopping_app
     clothing.cpp 
     book.cpp 
     toy.cpp
+    shopping_cart.cpp
 )

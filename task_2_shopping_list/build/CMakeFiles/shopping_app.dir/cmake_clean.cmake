@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shopping_app.dir/grocery.cpp.o.d"
   "CMakeFiles/shopping_app.dir/main.cpp.o"
   "CMakeFiles/shopping_app.dir/main.cpp.o.d"
+  "CMakeFiles/shopping_app.dir/shopping_cart.cpp.o"
+  "CMakeFiles/shopping_app.dir/shopping_cart.cpp.o.d"
   "CMakeFiles/shopping_app.dir/shopping_items.cpp.o"
   "CMakeFiles/shopping_app.dir/shopping_items.cpp.o.d"
   "CMakeFiles/shopping_app.dir/toy.cpp.o"

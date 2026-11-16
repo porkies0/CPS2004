@@ -4,10 +4,12 @@
 #include "book.h"
 #include "toy.h"
 #include "shopping_items.h"
+#include "shopping_cart.h"
 #include <vector>
 #include <iostream>
 #include <fstream>
 #include <memory>
+#include <utility>
 
 int main () {
     std::vector<std::unique_ptr<ShoppingItem>> inventory; 
@@ -35,6 +37,18 @@ int main () {
         std::cout << inventory[i]->getSpecializedInfo() << "\n";
         std::cout << "\n";
     }
+
+    std::cout << "Direct Shopping Cart\n";
+    
+    auto book = std::make_unique<Book>("Can't hurt me", 20.5, 3320, "1544512279", 364, "David Goggins");
+
+    auto jeans = std::make_unique<Clothing>("Jeans", 15, 2929, "denim", "Men");
+
+    ShoppingCart myCart;
+    myCart.addItem(std::move(book));
+    myCart.addItem(std::move(jeans));
+
+    myCart.displayCart();
 
     std::ofstream outFile("inventory.txt");
     if (outFile.is_open()) {

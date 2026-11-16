@@ -886,6 +886,7 @@ CMakeFiles/shopping_app.dir/main.cpp.o: /home/timot/CPS2004/task_2_shopping_list
   /home/timot/CPS2004/task_2_shopping_list/clothing.h \
   /home/timot/CPS2004/task_2_shopping_list/electronics.h \
   /home/timot/CPS2004/task_2_shopping_list/grocery.h \
+  /home/timot/CPS2004/task_2_shopping_list/shopping_cart.h \
   /home/timot/CPS2004/task_2_shopping_list/shopping_items.h \
   /home/timot/CPS2004/task_2_shopping_list/toy.h \
   /usr/include/alloca.h \
@@ -966,6 +967,7 @@ CMakeFiles/shopping_app.dir/main.cpp.o: /home/timot/CPS2004/task_2_shopping_list
   /usr/include/c++/15/bits/stl_iterator_base_types.h \
   /usr/include/c++/15/bits/stl_pair.h \
   /usr/include/c++/15/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15/bits/stl_relops.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
   /usr/include/c++/15/bits/stl_vector.h \
@@ -1022,6 +1024,7 @@ CMakeFiles/shopping_app.dir/main.cpp.o: /home/timot/CPS2004/task_2_shopping_list
   /usr/include/c++/15/tuple \
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
+  /usr/include/c++/15/utility \
   /usr/include/c++/15/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -1680,6 +1683,12 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/unistd.h:
+
+/usr/include/syscall.h:
+
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -1742,8 +1751,6 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 
 /usr/include/c++/15/clocale:
 
-/usr/include/c++/15/bits/stl_algobase.h:
-
 /usr/include/c++/15/cctype:
 
 /usr/include/c++/15/bits/stl_bvector.h:
@@ -1794,15 +1801,11 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
-
 /usr/include/linux/limits.h:
 
 /usr/include/endian.h:
 
 /usr/include/stdint.h:
-
-/usr/include/syscall.h:
 
 /home/timot/CPS2004/task_2_shopping_list/electronics.cpp:
 
@@ -1930,6 +1933,8 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 
 /usr/include/c++/15/backward/binders.h:
 
+/usr/include/c++/15/utility:
+
 /usr/include/c++/15/bits/basic_ios.tcc:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -1995,6 +2000,10 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 /usr/include/c++/15/bits/iterator_concepts.h:
 
 /usr/include/c++/15/bits/localefwd.h:
+
+/usr/include/c++/15/bits/stl_algobase.h:
+
+/usr/include/c++/15/bits/stl_relops.h:
 
 /usr/include/c++/15/bits/max_size_type.h:
 
@@ -2124,10 +2133,6 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/15/numbers:
@@ -2162,8 +2167,6 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/unistd.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
 
 /usr/include/c++/15/ext/atomicity.h:
@@ -2181,6 +2184,12 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /home/timot/CPS2004/task_2_shopping_list/grocery.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/home/timot/CPS2004/task_2_shopping_list/shopping_cart.h:
 
 /usr/include/c++/15/bits/exception_defines.h:
 

@@ -9,6 +9,7 @@ shopping_app: \
   CMakeFiles/shopping_app.dir/clothing.cpp.o \
   CMakeFiles/shopping_app.dir/book.cpp.o \
   CMakeFiles/shopping_app.dir/toy.cpp.o \
+  CMakeFiles/shopping_app.dir/shopping_cart.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -57,6 +58,8 @@ CMakeFiles/shopping_app.dir/clothing.cpp.o:
 CMakeFiles/shopping_app.dir/book.cpp.o:
 
 CMakeFiles/shopping_app.dir/toy.cpp.o:
+
+CMakeFiles/shopping_app.dir/shopping_cart.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 

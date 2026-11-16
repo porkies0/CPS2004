@@ -891,6 +891,7 @@ CMakeFiles/shopping_app.dir/main.cpp.o
  /home/timot/CPS2004/task_2_shopping_list/clothing.h
  /home/timot/CPS2004/task_2_shopping_list/electronics.h
  /home/timot/CPS2004/task_2_shopping_list/grocery.h
+ /home/timot/CPS2004/task_2_shopping_list/shopping_cart.h
  /home/timot/CPS2004/task_2_shopping_list/shopping_items.h
  /home/timot/CPS2004/task_2_shopping_list/toy.h
  /usr/include/alloca.h
@@ -971,6 +972,7 @@ CMakeFiles/shopping_app.dir/main.cpp.o
  /usr/include/c++/15/bits/stl_iterator_base_types.h
  /usr/include/c++/15/bits/stl_pair.h
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
+ /usr/include/c++/15/bits/stl_relops.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_uninitialized.h
  /usr/include/c++/15/bits/stl_vector.h
@@ -1027,6 +1029,7 @@ CMakeFiles/shopping_app.dir/main.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/utility
  /usr/include/c++/15/vector
  /usr/include/ctype.h
  /usr/include/endian.h
