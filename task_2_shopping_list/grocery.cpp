@@ -11,7 +11,7 @@ string Grocery::getSpecializedInfo() const {
     return "Expiration date: " + expDate + " | Weight: " + to_string(weightKg) + " kg";
 }
 
-void Grocery::persist(std::ofstream& os) const{
+void Grocery::persist(std::ostream& os) const{
 
     os  << "Grocery" << "|"
         << id << "|"
@@ -21,17 +21,20 @@ void Grocery::persist(std::ofstream& os) const{
         << weightKg << "|" << std::endl;
 }
 
-ShoppingItem* Grocery::restore(const std::vector<std::string>& fields) {
 
-    if (fields.size() < 6) {
-        return nullptr;
+std::istream& operator>>(std::istream& is, Grocery& g) {
+    std::string line;
+    if (!std::getline(is, line)){
+        return is;
     }
-
-    int id = std::stoi(fields[1]);
-    std::string name = fields[2];
-    double price = std::stod(fields[3]);
-    std::string material = fields[4];
-    double weightKg = std::stod(fields[5]);
-
-    return new Grocery(name, price, id, material, weightKg);
+    auto f = parseLine(line);
+    if (f.size() < 6 || f[0] != "Grocery") { 
+        is.setstate(std::ios::failbit);
+        return is;
+    }
+    try {
+        g.id = std::stoi(f[1]);  g.name = f[2];  g.price = std::stod(f[3]);
+        g.expDate = f[4];        g.weightKg = std::stod(f[5]);
+    } catch (const std::exception&) { is.setstate(std::ios::failbit); }
+    return is;
 }

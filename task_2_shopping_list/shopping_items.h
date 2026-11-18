@@ -2,6 +2,7 @@
 #define SHOPPING_ITEMS_H
 #include <string>
 #include <fstream>
+#include <vector>
 
 class ShoppingItem {
 protected:
@@ -16,7 +17,7 @@ public:
     virtual void displayInfo() const;
     virtual std::string getSpecializedInfo() const = 0;
     // 0 sa rovna, ze to nemam implementovane v shopping_items.cpp
-    virtual void persist(std::ofstream& os) const = 0;
+    virtual void persist(std::ostream& os) const = 0;
 
     std::string getName() const;
     double getPrice() const;
@@ -28,6 +29,9 @@ public:
     void setId(int i);
 };
 
-ShoppingItem* restore(std::ifstream& is);
+std::vector<std::string> parseLine(const std::string& line);
+std::ostream& operator<<(std::ostream& os, const ShoppingItem& item);
+
+ShoppingItem* restore(std::istream& is);
 
 #endif

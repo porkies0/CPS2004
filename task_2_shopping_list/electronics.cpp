@@ -11,7 +11,7 @@ string Electronics::getSpecializedInfo() const {
     return "Brand: " + brand + " | Warranty: " + to_string(warrantyMonths) + " months";
 }
 
-void Electronics::persist(std::ofstream& os) const{
+void Electronics::persist(std::ostream& os) const{
 
     os  << "Electronics" << "|"
         << id << "|"
@@ -21,17 +21,21 @@ void Electronics::persist(std::ofstream& os) const{
         << warrantyMonths << "|" << std::endl;
 }
 
-ShoppingItem* Electronics::restore(const std::vector<std::string>& fields) {
-
-    if (fields.size() < 6) {
-        return nullptr;
+std::istream& operator>>(std::istream& is, Electronics& e) {
+    std::string line;
+    if (!std::getline(is, line)){
+        return is;
     }
 
-    int id = std::stoi(fields[1]);
-    std::string name = fields[2];
-    double price = std::stod(fields[3]);
-    std::string material = fields[4];
-    int weightKg = std::stoi(fields[5]);
+    auto f = parseLine(line);
+    if (f.size() < 6 || f[0] != "Electronics") { 
+        is.setstate(std::ios::failbit); 
+        return is; 
+    }
 
-    return new Electronics(name, price, id, material, weightKg);
+    try {
+        e.id = std::stoi(f[1]);  e.name = f[2];  e.price = std::stod(f[3]);
+        e.brand = f[4];          e.warrantyMonths = std::stoi(f[5]);
+    } catch (const std::exception&) { is.setstate(std::ios::failbit); }
+    return is;
 }

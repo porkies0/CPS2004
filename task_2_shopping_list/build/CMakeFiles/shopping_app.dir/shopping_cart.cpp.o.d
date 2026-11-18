@@ -170,9 +170,12 @@ CMakeFiles/shopping_app.dir/shopping_cart.cpp.o: \
  /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
- /usr/include/c++/15/bits/fstream.tcc /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_tempbuf.h \
+ /usr/include/c++/15/bits/fstream.tcc /usr/include/c++/15/vector \
  /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/memory \
+ /usr/include/c++/15/bits/stl_tempbuf.h \
  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
  /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
  /usr/include/c++/15/bits/shared_ptr.h \
@@ -212,8 +215,5 @@ CMakeFiles/shopping_app.dir/shopping_cart.cpp.o: \
  /usr/include/c++/15/bits/ranges_uninitialized.h \
  /usr/include/c++/15/bits/ranges_algobase.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/vector \
- /usr/include/c++/15/bits/stl_vector.h \
- /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/iostream \
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/iostream \
  /usr/include/c++/15/utility /usr/include/c++/15/bits/stl_relops.h

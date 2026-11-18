@@ -12,7 +12,7 @@ class Electronics : public ShoppingItem {
         Electronics(std::string name, double price, int id, std::string brand, int warrantyMonths);
 
         std::string getSpecializedInfo() const override;
-        void persist(std::ofstream& os) const override;
-        static ShoppingItem* restore(const std::vector<std::string>& fields);
+        void persist(std::ostream& os) const override;
+        friend std::istream& operator>>(std::istream& is, Electronics& e);
 };
 

@@ -13,7 +13,7 @@ string Book::getSpecializedInfo() const {
 
 }
 
-void Book::persist(std::ofstream& os) const{
+void Book::persist(std::ostream& os) const{
 
     os  << "Book" << "|"
         << id << "|"
@@ -25,18 +25,24 @@ void Book::persist(std::ofstream& os) const{
 }
 
 
-ShoppingItem* Book::restore(const std::vector<std::string>& fields) {
-
-    if (fields.size() < 7) {
-        return nullptr;
+std::istream& operator>>(std::istream& is, Book& b) {
+    std::string line;
+    if (!std::getline(is, line)) {
+        return is;
     }
 
-    int id = std::stoi(fields[1]);
-    std::string name = fields[2];
-    double price = std::stod(fields[3]);
-    std::string isbn = fields[4];
-    int pages = std::stoi(fields[5]);
-    std::string author = fields[6];
+    std::vector<std::string> f = parseLine(line);
+    if (f.size() < 7 || f[0] != "Book") {
+        is.setstate(std::ios::failbit);
+        return is;
+    }
 
-    return new Book(name, price, id, isbn, pages, author);
+    b.id     = std::stoi(f[1]);
+    b.name   = f[2];
+    b.price  = std::stod(f[3]);
+    b.isbn   = f[4];
+    b.pages  = std::stoi(f[5]);
+    b.author = f[6];
+
+    return is;
 }

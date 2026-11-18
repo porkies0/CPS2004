@@ -8,6 +8,7 @@
 #include "clothing.h"
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -70,7 +71,12 @@ std::vector<std::string> parseLine(const std::string& line) {
     return fields;
 }
 
-ShoppingItem* restore(std::ifstream& is) {
+std::ostream& operator<<(std::ostream& os, const ShoppingItem& item) {
+    item.persist(os);
+    return os;
+}
+
+ShoppingItem* restore(std::istream& is) {
     std::string line;
 
 
@@ -86,24 +92,30 @@ ShoppingItem* restore(std::ifstream& is) {
     }
 
 
-    std::string typeId = fields[0];
+    std::string type = fields[0];
+    std::istringstream iss(line);
 
-
-    if (typeId == "Book") {
-        return Book::restore(fields);
-    } 
-    else if (typeId == "Toy") {
-        return Toy::restore(fields);
-    } 
-    else if (typeId == "Electronics") {
-        return Electronics::restore(fields);
-    } 
-    else if (typeId == "Grocery") {
-        return Grocery::restore(fields);
-    } 
-    else if (typeId == "Clothing") {
-        return Clothing::restore(fields);
+ 
+    if (type == "Book") {
+        auto* b = new Book("", 0, 0, "", 0, "");
+        if (iss >> *b) return b;
+        delete b;
+    } else if (type == "Toy") {
+        auto* t = new Toy("", 0, 0, "", 0);
+        if (iss >> *t) return t;
+        delete t;
+    } else if (type == "Electronics") {
+        auto* e = new Electronics("", 0, 0, "", 0);
+        if (iss >> *e) return e;
+        delete e;
+    } else if (type == "Grocery") {
+        auto* g = new Grocery("", 0, 0, "", 0);
+        if (iss >> *g) return g;
+        delete g;
+    } else if (type == "Clothing") {
+        auto* c = new Clothing("", 0, 0, "", "");
+        if (iss >> *c) return c;
+        delete c;
     }
-
     return nullptr;
 }

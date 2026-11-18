@@ -180,4 +180,5 @@ CMakeFiles/shopping_app.dir/shopping_items.cpp.o: \
  /home/timot/CPS2004/task_2_shopping_list/electronics.h \
  /home/timot/CPS2004/task_2_shopping_list/grocery.h \
  /home/timot/CPS2004/task_2_shopping_list/clothing.h \
- /usr/include/c++/15/iostream
+ /usr/include/c++/15/iostream /usr/include/c++/15/sstream \
+ /usr/include/c++/15/bits/sstream.tcc

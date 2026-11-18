@@ -11,7 +11,7 @@ string Clothing::getSpecializedInfo() const {
     return "Material: " + material + " | Sex: " + sex;
 }
 
-void Clothing::persist(std::ofstream& os) const{
+void Clothing::persist(std::ostream& os) const{
 
     os  << "Clothing" << "|"
         << id << "|"
@@ -21,17 +21,19 @@ void Clothing::persist(std::ofstream& os) const{
         << sex << "|" << std::endl;
 }
 
-ShoppingItem* Clothing::restore(const std::vector<std::string>& fields) {
-
-    if (fields.size() < 6) {
-        return nullptr;
+std::istream& operator>>(std::istream& is, Clothing& c) {
+    std::string line;
+    if (!std::getline(is, line)){
+        return is;
     }
-
-    int id = std::stoi(fields[1]);
-    std::string name = fields[2];
-    double price = std::stod(fields[3]);
-    std::string material = fields[4];
-    std::string sex =fields[5];
-
-    return new Clothing(name, price, id, material, sex);
+    auto f = parseLine(line);
+    if (f.size() < 6 || f[0] != "Clothing") {
+        is.setstate(std::ios::failbit);
+        return is;
+    }
+    try {
+        c.id = std::stoi(f[1]);  c.name = f[2];  c.price = std::stod(f[3]);
+        c.material = f[4];       c.sex = f[5];
+    } catch (const std::exception&) { is.setstate(std::ios::failbit); }
+    return is;
 }

@@ -11,7 +11,7 @@ string Toy::getSpecializedInfo() const {
     return "Material: " + material + " | Minimum Age: " + to_string(minimum_age) + "+";
 }
 
-void Toy::persist(std::ofstream& os) const{
+void Toy::persist(std::ostream& os) const{
 
     os  << "Toy" << "|"
         << id << "|"
@@ -21,17 +21,17 @@ void Toy::persist(std::ofstream& os) const{
         << minimum_age << "|" << std::endl;
 }
 
-ShoppingItem* Toy::restore(const std::vector<std::string>& fields) {
-
-    if (fields.size() < 6) {
-        return nullptr;
+std::istream& operator>>(std::istream& is, Toy& t) {
+    std::string line;
+    if (!std::getline(is, line)) return is;
+    auto f = parseLine(line);
+    if (f.size() < 6 || f[0] != "Toy") { 
+        is.setstate(std::ios::failbit); 
+        return is; 
     }
-
-    int id = std::stoi(fields[1]);
-    std::string name = fields[2];
-    double price = std::stod(fields[3]);
-    std::string material = fields[4];
-    int minAge = std::stoi(fields[5]);
-
-    return new Toy(name, price, id, material, minAge);
+    try {
+        t.id = std::stoi(f[1]);  t.name = f[2];  t.price = std::stod(f[3]);
+        t.material = f[4];       t.minimum_age = std::stoi(f[5]);
+    } catch (const std::exception&) { is.setstate(std::ios::failbit); }
+    return is;
 }
